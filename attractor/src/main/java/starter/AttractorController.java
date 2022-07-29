@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 public class AttractorController {
 
     @PostMapping()
-    @ResponseStatus(HttpStatus.OK)
+    @ResponseStatus(value = HttpStatus.OK, reason = "blah blah")
     public void create(@RequestBody String body){
         System.out.println("attract waste: " + body);
     }
